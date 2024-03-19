@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% block title %}Smart Notice Board{% endblock %}
+{% block headerLinks %} {% endblock %}
+
+{% block content %}
+<div class="w-full px-16 py-6 mx-auto">
+    <!-- content -->
+    <div class="flex flex-wrap -mx-3">
+      <div class="w-full max-w-full px-3 mt-0 lg:w-7/12 lg:flex-none">
+        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+          <div class="p-6 px-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
+            <div class="flex flex-wrap -mx-3">
+              <div class="flex items-center flex-none w-1/2 max-w-full px-3">
+                <h6 class="mb-0 dark:text-white">Currently Active</h6>
+              </div>
+              <div class="flex-none w-1/2 max-w-full px-3 text-right">
+                <a class="inline-block px-5 py-2.5 font-bold leading-normal text-center text-white align-middle transition-all bg-transparent rounded-lg cursor-pointer text-sm ease-in shadow-md bg-150 bg-gradient-to-tl from-zinc-800 to-zinc-700 dark:bg-gradient-to-tl dark:from-slate-750 dark:to-gray-850 hover:shadow-xs active:opacity-85 hover:-translate-y-px tracking-tight-rem bg-x-25" href="javascript:;"> <i class="fas fa-plus"> </i>&nbsp;&nbsp;Add New Notice</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-auto p-4 pt-6">
+            <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+              <li class="p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
+                <div class="flex justify-between mb-2 content-center">
+                  <h6 class="text-sm leading-normal dark:text-white">Notice Name here</h6>
+                  <div>
+                    <a class="relative z-10 inline-block mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                    <a class="ml-6 inline-block dark:text-white mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">Notice for: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">All</span></span>
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">End Date: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">30-04-2024</span></span>
+                  <span class="text-xs leading-tight dark:text-white/80">Message: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem perferendis natus soluta fugiat laborum. Eaque dolorem tenetur libero sit!</span></span>
+                </div>
+              </li>
+              <li class="p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
+                <div class="flex justify-between mb-2 content-center">
+                  <h6 class="text-sm leading-normal dark:text-white">Notice Name here</h6>
+                  <div>
+                    <a class="relative z-10 inline-block mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                    <a class="ml-6 inline-block dark:text-white mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">Notice for: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">All</span></span>
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">End Date: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">30-04-2024</span></span>
+                  <span class="text-xs leading-tight dark:text-white/80">Message: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem perferendis natus soluta fugiat laborum. Eaque dolorem tenetur libero sit!</span></span>
+                </div>
+              </li>
+              <li class="p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
+                <div class="flex justify-between mb-2 content-center">
+                  <h6 class="text-sm leading-normal dark:text-white">Notice Name here</h6>
+                  <div>
+                    <a class="relative z-10 inline-block mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                    <a class="ml-6 inline-block dark:text-white mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">Notice for: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">All</span></span>
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">End Date: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">30-04-2024</span></span>
+                  <span class="text-xs leading-tight dark:text-white/80">Message: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem perferendis natus soluta fugiat laborum. Eaque dolorem tenetur libero sit!</span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full max-w-full px-3 mt-0 lg:w-5/12 lg:flex-none">
+        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+          <div class="p-6 px-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
+            <div class="flex flex-wrap -mx-3">
+              <div class="flex items-center flex-none w-1/2 max-w-full px-3">
+                <h6 class="mb-0 dark:text-white">Inactive Notices</h6>
+              </div>
+            </div>
+          </div>
+          <div class="flex-auto p-4 pt-6">
+            <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+              <li class="p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
+                <div class="flex justify-between mb-2 content-center">
+                  <h6 class="text-sm leading-normal dark:text-white">Notice Name here</h6>
+                  <div>
+                    <a class="relative z-10 inline-block mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                    <a class="ml-2 inline-block dark:text-white mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">Notice for: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">All</span></span>
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">End Date: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">30-04-2024</span></span>
+                  <span class="text-xs leading-tight dark:text-white/80">Message: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem perferendis natus soluta fugiat laborum. Eaque dolorem tenetur libero sit!</span></span>
+                </div>
+              </li>
+              <li class="p-6 mb-2 border-0 rounded-t-inherit rounded-xl bg-gray-50 dark:bg-slate-850">
+                <div class="flex justify-between mb-2 content-center">
+                  <h6 class="text-sm leading-normal dark:text-white">Notice Name here</h6>
+                  <div>
+                    <a class="relative z-10 inline-block mb-0 font-bold text-center text-transparent align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 bg-gradient-to-tl from-red-600 to-orange-600 hover:-translate-y-px active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;"><i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-orange-600 bg-x-25 bg-clip-text"></i>Delete</a>
+                    <a class="ml-2 inline-block dark:text-white mb-0 font-bold text-center align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-normal text-xs ease-in bg-150 hover:-translate-y-px active:opacity-85 bg-x-25 text-slate-700" href="javascript:;"><i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true"></i>Edit</a>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">Notice for: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">All</span></span>
+                  <span class="mb-2 text-xs leading-tight dark:text-white/80">End Date: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">30-04-2024</span></span>
+                  <span class="text-xs leading-tight dark:text-white/80">Message: <span class="font-semibold text-slate-700 dark:text-white sm:ml-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem perferendis natus soluta fugiat laborum. Eaque dolorem tenetur libero sit!</span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+{% endblock %}
+
+{% block script %} {% endblock %}
